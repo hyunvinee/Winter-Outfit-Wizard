@@ -9,9 +9,14 @@ import uvicorn
 import os
 from pathlib import Path
 
+from download_models import download_models
 from model_utils import ClothingClassifier
 from color_extractor import ColorExtractor
 from gemini_service import GeminiStyleAdvisor
+
+# Download models from Google Drive if not exists
+print("Initializing application...")
+download_models()
 
 app = FastAPI(title="Winter Outfit Wizard")
 
