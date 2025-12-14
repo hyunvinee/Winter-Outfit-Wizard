@@ -99,11 +99,11 @@ class ClothingClassifier:
             
             # 각 카테고리별 가중치 로드
             weight_files = {
-                "outer": "outer_best.h5",
-                "inner1": "inner1_best.h5",
-                "inner2": "inner2_best.h5",
-                "bottom": "bottom_best.h5",
-                "pattern": "pattern_best.h5"
+                "outer": "outer_best.weights.h5",
+                "inner1": "inner1_best.weights.h5",
+                "inner2": "inner2_best.weights.h5",
+                "bottom": "bottom_best.weights.h5",
+                "pattern": "pattern_best.weights.h5"
             }
             
             for category, filename in weight_files.items():
