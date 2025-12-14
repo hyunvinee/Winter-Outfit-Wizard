@@ -3,11 +3,11 @@ import gdown
 
 # Google Drive 파일 ID와 저장 경로
 MODEL_FILES = {
-    "bottom_best.h5": "1GHbg0IqtoNZg__SEAsdJ2t2ennE6M-ED",
-    "inner1_best.h5": "1mPdUcp6k0a1eotr016NS-j-3Z_s04JXg",
-    "inner2_best.h5": "1qjjNcXq3Dyy162REjU-IMmGptg65c7th",
-    "outer_best.h5": "1kSi8pwJSbpFP8I2wq67v1WgBK6_MUAwf",
-    "pattern_best.h5": "1INIHjprBAGtUYxyrBtWGb3VA1Sib45MZ"
+    "bottom_best.weights.h5": "1GHbg0IqtoNZg__SEAsdJ2t2ennE6M-ED",
+    "inner1_best.weights.h5": "1mPdUcp6k0a1eotr016NS-j-3Z_s04JXg",
+    "inner2_best.weights.h5": "1qjjNcXq3Dyy162REjU-IMmGptg65c7th",
+    "outer_best.weights.h5": "1kSi8pwJSbpFP8I2wq67v1WgBK6_MUAwf",
+    "pattern_best.weights.h5": "1INIHjprBAGtUYxyrBtWGb3VA1Sib45MZ"
 }
 
 def download_models():
