@@ -146,3 +146,116 @@ button[type="submit"]:hover {
     animation: pulse 1.5s infinite;
 }
 
+/* ========================================
+   모바일 반응형 스타일
+   ======================================== */
+@media (max-width: 768px) {
+    /* 컨테이너 조정 */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* 제목 크기 조정 */
+    h1 {
+        font-size: 1.875rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    /* 업로드 박스 세로 배치 */
+    .grid.grid-cols-2.gap-4,
+    .grid.grid-cols-4.gap-4 {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 버튼 크기 키우기 */
+    button {
+        padding: 0.75rem 1.5rem !important;
+        font-size: 1rem !important;
+        min-height: 48px;
+    }
+
+    /* 폼 요소 크기 조정 */
+    select, input {
+        font-size: 1rem !important;
+        padding: 0.75rem !important;
+        min-height: 48px;
+    }
+
+    /* 결과 카드 1열로 */
+    .grid > div {
+        width: 100% !important;
+    }
+
+    /* 모달 전체 화면 */
+    .modal-content {
+        width: 95% !important;
+        max-height: 90vh !important;
+        margin: 1rem !important;
+    }
+
+    /* 이미지 미리보기 크기 */
+    .preview-container img {
+        max-height: 150px !important;
+    }
+
+    /* 색상 배지 크기 */
+    .color-badge {
+        font-size: 0.75rem !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+
+    /* 하단 버튼 영역 */
+    .fixed.bottom-0 {
+        padding: 1rem !important;
+    }
+
+    /* 토스트 위치 조정 */
+    #toastContainer {
+        right: 1rem !important;
+        left: 1rem !important;
+        top: 1rem !important;
+    }
+
+    /* 카드 내 간격 조정 */
+    .p-6 {
+        padding: 1rem !important;
+    }
+
+    .p-8 {
+        padding: 1.5rem !important;
+    }
+
+    /* 모달 내부 패딩 */
+    .info-modal-content {
+        padding: 1.5rem !important;
+    }
+
+    /* 리스트 아이템 */
+    li {
+        font-size: 0.9rem !important;
+    }
+
+    /* 업로드 박스 높이 */
+    .dropzone {
+        min-height: 120px !important;
+    }
+}
+
+/* 태블릿 사이즈 (768px ~ 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid.grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
